@@ -1,0 +1,12 @@
+let OBJ = {
+  name: "Max",
+  age: 31,
+  greet: function() {
+  console.log ("Hello there");
+}
+}
+
+let {name, age, greet} = OBJ;
+
+console.log(name);
+greet();

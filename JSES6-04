@@ -1,0 +1,35 @@
+let description = `
+  Like this!
+  forever
+  and ever
+`;
+
+console.log(description);
+
+console.log("<----------------------------------------->")
+
+let numbers = [1,2,3];
+
+let [a,b,c,d] = numbers;
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+
+let [e,f,g,h=4] = numbers;
+console.log(e);
+console.log(f);
+console.log(g);
+console.log(h);
+
+console.log("<----------------------------------------->")
+
+
+let i = 5;
+let j = 10;
+
+[j, i] = [i, j];
+console.log(i);
+console.log(j);
+
+console.log("<----------------------------------------->")

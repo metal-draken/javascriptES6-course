@@ -1,0 +1,47 @@
+let numbers = [1,2,3,4,5];
+
+function sumUp(toAdd) {
+  let result = 0;
+  for (let i = 0; i < toAdd.length; i++) {
+    result += toAdd[i];
+  }
+  return result;
+}
+
+console.log(sumUp(numbers));
+
+console.log("<----------------------------------------------->");
+
+function sumUpp(...toAdd) {
+  console.log(toAdd)
+}
+
+sumUpp(100,10,20);
+
+console.log("<----------------------------------------------->");
+
+function sumUppp(...toAdd) {
+  let result = 0;
+  for (let i = 0; i < toAdd.length; i++) {
+    result += toAdd[i];
+  }
+  return result;
+}
+
+console.log(sumUppp(100,20,10));
+
+console.log("<----------------------------------------------->");
+
+let numbersX = [1,2,3,4,5];
+console.log(Math.max(...numbers));
+
+console.log("<----------------------------------------------->");
+
+
+let testX = [1,2,3,4,5];
+
+for (let testY of testX) {
+  console.log(testY);
+  testX+1;
+  testY+1;
+}

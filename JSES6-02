@@ -1,0 +1,30 @@
+var ABC = 10;
+
+function XXX (number1, number2 = ABC) {
+  return number1 === number2;
+}
+
+console.log(XXX(10));
+
+function XXX2 (a, b=3) {
+  return a + b;
+}
+
+XXX2(3);
+XXX2(3,10);
+
+console.log("<-------------------->");
+
+let name = "Marco";
+let age = 35;
+
+let OBJ = {
+  name,
+    age,
+  greet () {
+    console.log(this.name + " " + this.age);
+  },
+}
+
+console.log(OBJ);
+OBJ.greet();
